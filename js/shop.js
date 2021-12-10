@@ -43,21 +43,27 @@ addOrder.addEventListener('click', () => {
 let quantity = document.querySelector('#quantity');
 let price = document.querySelector('#price');
 let total = quantity.value * price.value;
+const address = document.querySelector('#address');
+const phone = document.querySelector('#phone');
   
-  let xhttp = new XMLHttpRequest();
-  xhttp.onload = () => {
-    if(xhttp.readyState === XMLHttpRequest.DONE ) {
-      if(xhttp.status == 200) {
-        totalMessage.innerHTML = `Total: $${total}.00`;
-        checkoutMessage.style.opacity = '1';
-        checkoutMessage.style.pointerEvents = 'fill';
+  if (address.value == "" && phone.value == "") {
+    
+  } else{
+      let xhttp = new XMLHttpRequest();
+      xhttp.onload = () => {
+        if(xhttp.readyState === XMLHttpRequest.DONE ) {
+          if(xhttp.status == 200) {
+            totalMessage.innerHTML = `Total: $${total}.00`;
+            checkoutMessage.style.opacity = '1';
+            checkoutMessage.style.pointerEvents = 'fill';
+          }
+        } else{
+          alert('Failed');
+        }
       }
-    } else{
-      alert('Failed');
-    }
+      xhttp.open('POST', '../func/sendOrders.php', true);
+      let newform = new FormData(orderForm);
+      xhttp.send(newform);
+    
   }
-  xhttp.open('POST', '../func/sendOrders.php', true);
-  let newform = new FormData(orderForm);
-  xhttp.send(newform);
-  
 })

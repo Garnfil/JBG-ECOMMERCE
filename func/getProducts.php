@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include '../includes/config.php';
+include '../inc/config.php';
 
   $select_products_length = "SELECT * FROM products";
   $products_query = mysqli_query($conn, $select_products_length);

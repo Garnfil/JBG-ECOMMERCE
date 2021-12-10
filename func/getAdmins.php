@@ -1,5 +1,5 @@
 <?php 
-require '../includes/config.php';
+require '../inc/config.php';
 
   $select_admins_length = "SELECT * FROM admin";
   $admins_query = mysqli_query($conn, $select_admins_length);

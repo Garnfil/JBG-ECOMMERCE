@@ -1,5 +1,5 @@
 <?php
-include '../includes/config.php';
+include '../inc/config.php';
 
 $select_orders_length = "SELECT * FROM orders";
   $orders_query = mysqli_query($conn, $select_orders_length);

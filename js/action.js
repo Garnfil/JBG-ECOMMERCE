@@ -6,8 +6,11 @@ menu.addEventListener('click', () => {
   headContainer.classList.toggle('active-side');
 })
 
-//show message
-const message = document.querySelector('.message');
-if (message.innerText.length > 0){
-  message.classList.add('show-message');
+function showMessage(){
+	const message = document.querySelector('.message');
+	if (message.innerText.length > 0){
+  		message.classList.add('show-message');
+	}
 }
+
+showMessage();

@@ -1,7 +1,7 @@
 <?php 
-include '../includes/config.php';
+include '../inc/config.php';
 
-if ($_GET['action'] == 'edit_order') {
+/*if ($_GET['action'] == 'edit_order') {
   $id = $_GET['id'];
   $sql = "SELECT * FROM orders WHERE id = '$id'";
   $result = mysqli_query($conn, $sql);
@@ -42,7 +42,7 @@ if (isset($_POST['edit_order'])) {
       echo mysqli_error($conn);
     }
 }
-
+*/
 ?>
 
 <!DOCTYPE html>

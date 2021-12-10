@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include 'includes/config.php';
+include 'inc/config.php';
 
 if (isset($_POST['admin_login'])) {
   $username = $_POST['username'];

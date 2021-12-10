@@ -8,7 +8,7 @@ if ($_SESSION['fullname'] == '' && $_SESSION['email'] == '') {
   $anc = 'signin.php';
 } else{
   $sign = 'out';
-  $anc = 'includes/config.php?action=logout-user';
+  $anc = 'inc/config.php?action=logout-user';
 }
 
 
@@ -36,14 +36,14 @@ if ($_SESSION['fullname'] == '' && $_SESSION['email'] == '') {
 	<div class="head-container">
 		<a class="logo" href="">JBG</a>
 		<ul class="nav-link">
-			<li><a href="">Reviews</a></li>
-			<li><a href="">About</a></li>
-			<li><a href="">Contacts</a></li>
+      <li><a href="index.php">Home</a></li>
+			<li><a href="reviews.php">Reviews</a></li>
+			<li><a href="about.html">About</a></li>
 			<li><a class="sign-in" href='<?php echo $anc ?>'>Sign <?php echo $sign ?></a></li>
 		</ul>
 		<div class="side-head">
 			<input type="search" class="search" placeholder="Search Product">
-			<a class="cart" href=""><i class="fas fa-shopping-cart"></i></a>
+			<a class="cart" href="cart.php"><i class="fas fa-shopping-cart"></i></a>
 		</div>
 	</div>
 	

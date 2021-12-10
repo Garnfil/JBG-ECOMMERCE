@@ -236,7 +236,7 @@ for (let i = 0; i < cancels.length; i++) {
   })
 }
 
-//send form using ajax
+/*//send form using ajax
 //send user form
 let addUser = document.querySelector('#add_user');
 let userFormData = document.querySelector('#user-form-data');
@@ -373,4 +373,4 @@ const inputs = document.querySelectorAll('input');
 
 for (let i = 0; i < inputs.length; i++) {
   inputs[i].setAttribute('readonly', 'true');
-}
+}*/

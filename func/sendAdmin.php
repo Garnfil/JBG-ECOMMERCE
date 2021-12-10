@@ -1,5 +1,5 @@
 <?php 
-include '../includes/config.php';
+include '../inc/config.php';
 
 $errors = array('email'=>"",'fullname'=>"");
 $user_name = $_POST['user_name'];

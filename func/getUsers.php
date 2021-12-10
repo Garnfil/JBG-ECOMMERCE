@@ -1,5 +1,5 @@
 <?php
-include '../includes/config.php';
+include '../inc/config.php';
 
 $select_users_length = "SELECT * FROM users";
   $users_query = mysqli_query($conn, $select_users_length);

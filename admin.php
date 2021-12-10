@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include 'includes/length.php';
+include 'inc/length.php';
 
 if ($_SESSION['username'] == '') {
   header('location: admin-login.php');
@@ -41,7 +41,7 @@ if ($_SESSION['username'] == '') {
   				<button class="side" onclick="displayCon('admins',this)">Admins</button>
   				<button class="side" onclick="displayCon('orders',this)">Orders</button>
   				<button class="side" onclick="displayCon('products',this)">Products</button>
-  				<button class="side logout"><a href="includes/config.php?action=logout">Logout</a></button>
+  				<button class="side logout"><a href="inc/config.php?action=logout">Logout</a></button>
   			</div>
   		</div>
   		

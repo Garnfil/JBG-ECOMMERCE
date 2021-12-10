@@ -1,7 +1,7 @@
 <?php 
-include '../includes/config.php';
+include '../inc/config.php';
 
-if ($_GET['action'] == 'delete_user') {
+/*if ($_GET['action'] == 'delete_user') {
   $id = $_GET['id'];
   $sql = "DELETE FROM users WHERE user_unique_id = '$id'";
   if (mysqli_query($conn, $sql)) {
@@ -41,6 +41,15 @@ if ($_GET['action'] == 'delete_order') {
   }
 }
 
+if ($_GET['action'] == 'delete_cart') {
+  $id = $_GET['id'];
+  $sql = "DELETE FROM carts WHERE cart_id = '$id'";
+  if (mysqli_query($conn, $sql)) {
+    header('location: ../cart.php');
+  } else{
+    echo mysqli_error($conn);
+  }
+}*/
 
 
 ?>

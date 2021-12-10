@@ -1,5 +1,5 @@
 <?php 
-include '../includes/config.php';
+include '../inc/config.php';
 session_start();
 
 if ($_SESSION['email'] == '' || $_SESSION['fullname'] == '') {
@@ -62,8 +62,8 @@ foreach($products as $product) {
 							<span class="add">+</span>
 						</div>
 			</div>
-			<input type="text" name="customer_address" placeholder="Adress" required>
-			<input type="text" name="phone" placeholder="Contact Phone" required>
+			<input type="text" id="address" name="customer_address" placeholder="Adress" required>
+			<input type="text" id="phone" name="phone" placeholder="Contact Phone" required>
 			<input type="hidden" name="item_name" value="<?php echo $product_name ?>">
 			<input type="hidden" id="price" name="price" value="<?php echo $price ?>">
 			<input type="hidden" name="product_id" value="<?php echo $unique_id ?>">

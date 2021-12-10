@@ -1,5 +1,10 @@
 <?php 
 session_start();
+/*$localhost = 'sql112.epizy.com';
+$username = 'epiz_30558676';
+$password = 'OAoB0EW1SpZmPRP';
+$db_name = 'epiz_30558676_jbg';*/
+
 $localhost = 'localhost:3306';
 $username = 'root';
 $password = 'root';

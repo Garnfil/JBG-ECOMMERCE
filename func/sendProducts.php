@@ -1,7 +1,7 @@
 <?php 
-include '../includes/config.php';
+include '../inc/config.php';
 
-  $target_path = "../images/";
+  /*$target_path = "../images/";
   $target_path = $target_path . basename( $_FILES['add_product_image']['name']);
   
   $product_name = $_POST['add_product_name'];
@@ -18,6 +18,6 @@ include '../includes/config.php';
       }
     }else{
        echo 'Failed to Upload';
-    }
+    }*/
 
 ?>

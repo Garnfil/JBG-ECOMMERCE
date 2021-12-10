@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include 'includes/config.php';
+include 'inc/config.php';
 
 // get the length of users, admin, orders, and products
   //products length

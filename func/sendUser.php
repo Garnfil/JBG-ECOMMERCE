@@ -1,7 +1,7 @@
 <?php 
-include '../includes/config.php';
+include '../in/config.php';
 
-$errors = array('email'=>"",'fullname'=>"");
+/*$errors = array('email'=>"",'fullname'=>"");
 $fullname = $_POST['fullname'];
 $email = $_POST['email'];
 $password = $_POST['password'];
@@ -26,6 +26,6 @@ $password = password_hash($password, PASSWORD_DEFAULT);
       } else{
         echo 'Error Query: ' . mysqli_error($conn);
       }
-  }
+  }*/
 
 ?>

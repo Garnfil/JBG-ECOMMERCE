@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include 'includes/config.php';
+include 'inc/config.php';
 $message = '';
 
 if (isset($_POST['login'])) {
@@ -46,9 +46,9 @@ if (isset($_POST['login'])) {
 	<div class="head-container">
 		<a class="logo" href="index.php">JBG</a>
 		<ul class="nav-link">
-			<li><a href="">Reviews</a></li>
-			<li><a href="">About</a></li>
-			<li><a href="">Contacts</a></li>
+		  <li><a href="index.php">Home</a></li>
+			<li><a href="reviews.php">Reviews</a></li>
+			<li><a href="about.html">About</a></li>
 			<li><a class="sign-in" href="signin.php">Sign in</a></li>
 		</ul>
 		<div class="side-head">

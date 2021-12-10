@@ -151,17 +151,17 @@ a{
 }
 .product{
 	width: 23%;
-	height: 28vh;
+	height: auto;
 	border: 1px solid black;
 }
 .product img{
 	width: 100%;
-	height: 65%;
+	height: 20vh;
 }
 .product-info{
 	width: 100%;
 	height: 35%;
-	padding: 0.2rem 0.4rem;
+	padding: 0.5rem 0.4rem;
 }
 .product-info h6{
 	font-size: 0.8rem;
@@ -315,6 +315,203 @@ a{
 	background: ghostwhite;
 	cursor: pointer;
 }
+.cart-container{
+	width: 100%;
+	height: 100vh;
+	padding: 11vh 2rem 0 2rem;
+}
+.cart-container h1{
+	font-size: 4rem;
+	text-align: center;
+}
+.cart-content{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	padding: 1.3rem 0;
+}
+.cart-con{
+	width: 23%;
+	height: 25vh;
+	border: 1px solid black;
+	padding: 1rem 0.5rem;
+}
+.cart-info{
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.cart-info img{
+	width: 30%;
+}
+.cart-info h3{
+	font-size: 0.8rem;
+}
+.cart-con h2{
+	margin: 1rem 0;
+	font-size: 1rem;
+	text-align: center;
+}
+.cart-buttons{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.del-cart{
+	padding: 0.2rem 1rem;
+	border: 1px solid black;
+}
+.about-container{
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(360deg,transparent,rgba(0,0,0,0.9)), url("../images/photo-1607082348824-0a96f2a4b9da.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.about-content{
+	width: 65%;
+	height: auto;
+}
+.about-content h1{
+	font-size: 4rem;
+	color: ghostwhite;
+	text-align: center;
+}
+.about-content p{
+	font-size: 1.3rem;
+	color: ghostwhite;
+	line-height: 30px;
+	text-align: center;
+}
+.about-buttons{
+	margin-top: 1.5rem;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+.go-home{
+	color: ghostwhite;
+	background: black;
+	padding: 0.3rem 1.3rem;
+}
+.go-reviews{
+	color: ghostwhite;
+	border: 1px solid ghostwhite;
+	padding: 0.2rem 1rem;
+}
+.reviews-container{
+	width: 100%;
+	height: 100vh;
+	padding: 10vh 2rem 0 2rem;
+}
+.reviews-buttons{
+	width: 90%;
+	padding: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	position: fixed;
+	z-index: 4;
+	background: ghostwhite;
+}
+.rev-button{
+	padding: 0.5rem 2.5rem;
+	background: transparent;
+	border: 1px solid black;
+	color: black;
+	outline: none;
+	border-radius: 20px;
+}
+.active-rev{
+	background: black;
+	color: ghostwhite;
+}
+.reviews-content{
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 1rem;
+	margin: 5rem 0 1.5rem 0;
+	z-index: 3;
+}
+.review{
+	width: 60%;
+	border: 1px solid black;
+	height: auto;
+	padding: 1.5rem;
+	position: relative;
+}
+.review h5{
+	color: gray;
+}
+.review p{
+	margin-top: 0.8rem;
+}
+.review span{
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 0.7rem;
+	color: black;
+	margin: 1rem;
+}
+.review-form{
+	width: 100%;
+	height: 12vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: sticky;
+	bottom: 0;
+	left: 0;
+	background: black;
+}
+.review-form form{
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1.4rem;
+}
+.review-form textarea{
+	width: 50%;
+	padding: 0.5rem 1rem;
+	color: black;
+	background: ghostwhite;
+	outline: none;
+	border: none;
+}
+.review-form select{
+	color: ghostwhite;
+	border: 1px solid ghostwhite;
+	background: black;
+	padding: 0rem 1rem;
+	font-size: 1.3rem;
+	outline: none;
+}
+.rev-submit{
+	padding: 0.5rem 1rem;
+	background: ghostwhite;
+	color: black;
+	border: none;
+}
+
+
+
 
 @media screen and (max-width: 475px){
 /* width */
@@ -435,6 +632,56 @@ a{
 	.signup-form{
 	  width: 90%;
 	  height: 65%;
+	}
+	.cart-con{
+		width: 100%;
+		height: 32vh;
+	}
+	.about-container{
+		background-position: center center;
+	}
+	.about-content{
+		width: 90%;
+	}
+	.about-content h1{
+		font-size: 2.5rem;
+	}
+	.about-content p{
+		font-size: 1rem;
+		line-height: 22px;
+	}
+	.reviews-container{
+		padding: 10vh 1rem 0 1rem;
+	}
+	.reviews-buttons{
+		width: 100%;
+		left: 0;
+		gap: 1rem;
+		justify-content: flex-start;
+		border-top: 1px solid black;
+	}
+	.rev-button{
+		padding: 0.4rem 1.2rem;
+	}
+	.reviews-content{
+		margin: 20vh 0 1.5rem 0;
+	}
+	.review{
+		width: 100%;
+	}
+	.review p{
+		font-size: 0.8rem;
+	}
+	.review-form{
+		padding: 0.5rem;
+		height: 12vh;
+	}
+	.review-form form{
+		width: 100%;
+		gap: 0.5rem;
+	}
+	.review-form select{
+		padding: 0.2rem;
 	}
 }
 .active-side{
